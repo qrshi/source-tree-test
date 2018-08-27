@@ -1,0 +1,9 @@
+--cpu Cortex-M0
+".\objects\macro.o"
+".\objects\main.o"
+".\objects\startup_stm32f030.o"
+".\objects\system_stm32f0xx.o"
+--strict --scatter ".\Objects\macro.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\macro.map" -o .\Objects\macro.axf
